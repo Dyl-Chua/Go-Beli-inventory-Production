@@ -20,10 +20,7 @@
              <th>Created At</th>
              <th>Quantity On Hand</th>
              <th>Restock Date & Quantity</th>
-             <th>Quantity Sold</th>
-             <th>ACK Number</th>
              <th>Remarks</th>
-             <th>Validity</th>
          </tr>
  
          <tr>
@@ -32,10 +29,7 @@
              <td> <%= product.createdAt.toLocaleDateString() %></td>
              <td> <%= product.quantityonhand %> </td>
              <td><%= product.restock %> </td>
-             <td><%= product.sold %></td>
-             <td><%= product.payment %></td>
              <td><%= product.remarks %> </td>
-             <td><%= product.valid %></td>
          </tr>
          </table>
 
@@ -65,7 +59,7 @@
 </script>
 
     
-<a href="/" class="btn btn-secondary">All Products</a><br><br>
+<a href="/product" class="btn btn-secondary">All Products</a><br><br>
 <a href="/product/edit/<%= product.id %>" class="btn btn-info">Edit</a>
 </body>
 </html>

@@ -31,8 +31,7 @@ const saleSchema = new mongoose.Schema({
     },
 
     salespayment:{
-        type: Date,
-        default: Date.now
+        type: String,
     },
 
     createdAt:{

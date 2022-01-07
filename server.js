@@ -136,7 +136,7 @@ app.post('/product', async (req,res) =>{
 
   app.delete('/product/:id', async (req,res)=>{
       await Product.findByIdAndDelete(req.params.id)
-      res.redirect('/')
+      res.redirect('/product')
   })
 
   
